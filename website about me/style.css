@@ -1,0 +1,190 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-style: normal;
+}
+
+
+:root {
+    --bg-main: #1A2238;
+    --follow-color: #FF6A3D;
+    --whatsapp: green;
+    --card-bg:#f7f7f7;
+    --card-color: #222;
+
+}
+
+header {
+    background-color: var(--bg-main);
+    color: #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+
+}
+
+.btn-cta {
+    margin-right: 15px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: var(--bg-main);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--follow-color);
+}
+
+.btn-cta:hover {
+    
+    transform: rotate(5deg)
+}
+
+nav ul {
+    display: flex;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+  width: 100px;
+  height: 100px;
+
+}
+
+.logo:hover {
+    color: var(--follow-color);
+    transform: rotate(5deg)
+}
+
+li {
+    list-style-type: none;
+    padding: 15px;
+    transition: all .5s ease-in-out;
+    display: block;
+    border-radius: 8px;
+}
+
+li:hover {
+    background-color: var(--follow-color);
+    transform: rotate(5deg)
+}
+
+a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-size: 25px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.description {
+    font-size: 40px;
+    font-weight: bolder;
+}
+.img-invest {
+    border-radius: 8px;
+    width: 60%;
+    height: auto;
+    padding: 10px;
+}
+.parallax {
+    background-image: url("assets/foto/download.jfif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100vh;
+    width: 100%;
+    
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    background-color: var(--bg-main);
+    color: #eaeaea;
+    padding: 40px;
+
+}
+.mt-whatsapp {
+    margin-top: 20px;
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+.card-about {
+    text-align: center;
+   justify-content: center;
+   align-items: center;
+   padding: 25px;
+   background: var(--card-bg);
+   color: var(--card-color);
+   box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+}
+.icon {
+    width: 75px;
+    height: 75px;
+}
+.card-text-title {
+
+}
+.card-text-description {
+    margin-top: 4px;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--bg-main);
+    color: #eaeaea;
+}
+@media screen and (max-width: 500px){
+    .parallax {
+        width:100%;
+    }
+    .card-about {
+        gap: 0;
+        opacity: 0.7;
+    }
+    footer {
+        margin-bottom: 100px;
+    }
+    nav {
+        position: fixed;
+        bottom: 0;
+        z-index: 9;
+        width: 100%;
+        background: var(--bg-main);
+    }
+}
